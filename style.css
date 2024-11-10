@@ -1,0 +1,162 @@
+/* Universal styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container {
+  text-align: center;
+}
+
+h2 {
+  color: #386B4A;
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap; /* Prevents text from wrapping */
+  margin-bottom: 8px;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.line-left, .line-right {
+  border: none;
+  border-bottom: 2px solid #A0A5AB;
+  width: 50%;
+}
+
+.line-left {
+  margin-right: 2px;
+}
+
+.line-right {
+  margin-left: 2px;
+}
+
+.bundle-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bundle-option {
+  width: 320px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.bundle-option:hover, .bundle-option.selected {
+  border: 3px solid #386B4A;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bundle-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 8px;
+}
+
+.radio-group .price {
+  margin-top: 4px; 
+  margin-left: 25px;
+  font-size: 0.9em; 
+  color: #333;
+  display: block; 
+}
+
+.price {
+  font-weight: bold;
+}
+
+.discount {
+  color: #386B4A;
+  font-weight: bold;
+}
+
+.bundle-details {
+  display: none;
+  margin-top: 20px;
+  margin-left: 32px;
+}
+
+.bundle-option:hover .bundle-details,
+.bundle-option.show .bundle-details {
+  display: flex;
+  gap: 20px;
+}
+
+.size-selection, .color-selection {
+  flex: 0;
+}
+
+.size-selection label, .color-selection label {
+  display: block;
+  margin-right: 35px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.size-selection select, .color-selection select {
+  width: 70px;
+  height: 28px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.add-to-cart {
+  margin-top: 20px;
+  background-color: #386B4A;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-to-cart:hover {
+  background-color:#386B4A;
+}
+
+.discount {
+  display: block; 
+  margin-bottom: 4px; 
+}
+
+.tag {
+  display: block; 
+  color:#386B4A;
+  font-weight: bold; 
+}
